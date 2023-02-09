@@ -19,3 +19,18 @@ devices.forEach(function (device) {
     table.appendChild(row);
 });
 
+devices.forEach(function(device) {
+  $('#devices tbody').append(`
+    <tr>
+      <td>${device.user}</td>
+      <td>${device.name}</td>
+    </tr>`
+  );
+});
+
+document.querySelector('#add-device').addEventListener('click', function() {
+  const user = document.querySelector('#user').value;
+  const name = document.querySelector('#name').value;
+  devices.push({ user: user, name: name });
+  console.log(devices);
+});
