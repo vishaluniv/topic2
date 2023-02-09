@@ -36,5 +36,5 @@ $('#add-device').on('click', function () {
     const name = $('#name').val();
     devices.push({ user: user, name: name });
     localStorage.setItem('devices', JSON.stringify(devices));
-    location.href="devices-list.html";
+    location.href="device-list.html";
 });
