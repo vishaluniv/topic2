@@ -21,14 +21,14 @@ devices.forEach(function (device) {
 
 
 
-devices.forEach(function (device) {
-    $('#devices tbody').append(`
-      <tr>
-        <td>${device.user}</td>
-        <td>${device.name}</td>
-      </tr>`
-    );
-});
+// devices.forEach(function (device) {
+//     $('#devices tbody').append(`
+//       <tr>
+//         <td>${device.user}</td>
+//         <td>${device.name}</td>
+//       </tr>`
+//     );
+// });
 
 
 $('#add-device').on('click', function () {
